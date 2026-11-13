@@ -19,6 +19,14 @@ def buscar_aluno():
     else:
         print("Aluno não encontrado.")
 
+def remover_aluno():
+    nome = input("Digite o nome do aluno para remover: ")
+    if nome in alunos:
+        alunos.remove(nome)
+        print("Aluno removido com sucesso!")
+    else:
+        print("Aluno não encontrado.")
+
   while True:
       print("\n=== CADASTRO DE ALUNOS ===")
       print("1 - Cadastrar aluno"
