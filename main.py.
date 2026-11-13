@@ -1,0 +1,42 @@
+alunos = []
+
+def cadastrar_alunos():
+nome = input("Digite o nome do aluno: ")
+alunos.append(nome)
+print("Aluno cadastrado com sucesso!")
+
+def listar_alunos():
+if not alunos:
+    print("Nenhum aluno cadastrado.")
+else:
+    for aluno in alunos:
+        print(aluno)
+
+def buscar_aluno():
+    nome = input("Digite o nome do aluno: ")
+    if nome in alunos:
+        print("Aluno encontrado!")
+    else:
+        print("Aluno não encontrado.")
+
+  while True:
+      print("\n=== CADASTRO DE ALUNOS ===")
+      print("1 - Cadastrar aluno"
+      print("2 - Listar alunos")
+      print("3 - Buscar aluno")
+      print("4 - Sair")
+
+      opçao = input(Escolha uma opção: ")
+
+      if opcao == "1":
+          cadastrar_aluno()
+      elif opcao == "2":
+          listar_alunos()
+      elif opcao == "3":
+          buscar_aluno()
+      elif opcao == "4":
+          print("Encerrando sistema...")
+          break
+      else:
+          print("Opção inválida!")
+      
