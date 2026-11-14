@@ -32,7 +32,8 @@ def remover_aluno():
       print("1 - Cadastrar aluno"
       print("2 - Listar alunos")
       print("3 - Buscar aluno")
-      print("4 - Sair")
+      print("4 - Remover aluno")
+      print("5 - Sair")
 
       opçao = input(Escolha uma opção: ")
 
@@ -43,6 +44,8 @@ def remover_aluno():
       elif opcao == "3":
           buscar_aluno()
       elif opcao == "4":
+          remover_aluno()
+      elif opcao == "5":
           print("Encerrando sistema...")
           break
       else:
